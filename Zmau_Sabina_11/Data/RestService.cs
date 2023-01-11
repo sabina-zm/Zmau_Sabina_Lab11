@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Zmau_Sabina_11.Models;
 
 namespace Zmau_Sabina_11.Data
 {
@@ -12,7 +13,7 @@ namespace Zmau_Sabina_11.Data
         HttpClient client;
 
         //se va modifica ulterior cu ip-ul si portul corespunzator
-        string RestUrl = "https://192.169.0.8:45455/api/shoplists/{0}";
+        string RestUrl = "https://192.169.0.140:45455/swagger{0}";
         public List<ShopList> Items { get; private set; }
         public RestService()
         {
